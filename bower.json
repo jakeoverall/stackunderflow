@@ -1,0 +1,24 @@
+{
+  "name": "angular2-playground",
+  "description": "Let's learn angular 2",
+  "main": "index.js",
+  "authors": [
+    "joverall22 <joverall22@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-material-design": "~0.5.7",
+    "font-awesome": "~4.5.0",
+    "firebase": "~2.4.0"
+  }
+}

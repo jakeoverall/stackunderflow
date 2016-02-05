@@ -1,0 +1,55 @@
+<html>
+
+  <head>
+    <title>StackUnderflow</title>
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">
+		<link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/ripples.min.css">
+		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/styles/style.css">
+    <!-- 1. Load libraries -->
+		<script src="node_modules/es6-shim/es6-shim.js"></script>
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+		<script src="node_modules/angular2/bundles/router.dev.js"></script>
+		<!--<script src="jspm_packages/system.js"></script>-->
+		<base href="/">
+    <!-- 2. Configure SystemJS -->
+    <script>
+      System.config({
+        packages: {        
+          app: {
+            format: 'register',
+            defaultExtension: 'js'
+          }
+        }
+      });
+      System.import('app/boot')
+            .then(null, console.error.bind(console));
+    </script>
+
+  </head>
+
+  <!-- 3. Display the application -->
+  <body>
+    <angular2-playground>Loading...</angular2-playground>
+  </body>
+
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+	<script src="bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+	<script src="bower_components/firebase/firebase.js"></script>
+	<script>
+		setTimeout(function(){
+			$.material.init()
+		}, 2000)
+	</script>
+
+</html>
